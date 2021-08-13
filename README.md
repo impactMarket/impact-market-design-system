@@ -21,6 +21,6 @@ This is a design system based on Atomic Design pattern and styled-components. Th
 
 ## Screens
 
-![Main screen](src/assets/utils/main.png)
-![Navigation](src/assets/utils/impact-market-design-system.gif)
+![Main screen](main.png)
+![Navigation](impact-market-design-system.gif)
 
