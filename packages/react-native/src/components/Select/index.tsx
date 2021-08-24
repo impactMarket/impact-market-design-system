@@ -7,7 +7,7 @@ import {
     View,
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
-import { ipctColors } from '../../styles/index';
+import { colors } from '../styles/index';
 
 interface ISelectProps {
     label?: string;
@@ -49,7 +49,7 @@ export default class Select extends Component<ISelectProps, object> {
                                 onPress={onHelpPress}
                                 style={{ width: 70, height: 40 }}
                             >
-                                <Text style={{ color: ipctColors.blueRibbon }}>
+                                <Text style={{ color: colors.blueRibbon }}>
                                     [?]
                                 </Text>
                             </TouchableWithoutFeedback>
@@ -62,7 +62,7 @@ export default class Select extends Component<ISelectProps, object> {
                                 {
                                     borderColor: error
                                         ? '#EB5757'
-                                        : ipctColors.inputBorder,
+                                        : colors.inputBorder,
                                 },
                             ]}
                         >
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
         zIndex: 1,
         fontSize: 15,
         fontFamily: 'Inter-Regular',
-        color: ipctColors.almostBlack,
+        color: colors.almostBlack,
     },
     label: {
         position: 'absolute',
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         left: 12,
         top: -8,
         paddingHorizontal: 4,
-        color: ipctColors.regentGray,
+        color: colors.regentGray,
         backgroundColor: '#FFFFFF',
         zIndex: 1,
         fontWeight: '500',

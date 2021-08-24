@@ -10,7 +10,7 @@ import {
     StyleProp,
     ViewStyle,
 } from 'react-native';
-import { ipctColors } from '../../styles/index';
+import { colors } from '../styles/index';
 
 interface IInputProps extends TextInputProps {
     label?: string;
@@ -37,7 +37,7 @@ export default class Input extends Component<IInputProps, object> {
                             {
                                 borderColor: error
                                     ? '#EB5757'
-                                    : ipctColors.inputBorder,
+                                    : colors.inputBorder,
                             },
                         ]}
                     />
@@ -53,7 +53,7 @@ export default class Input extends Component<IInputProps, object> {
                         <Text
                             style={{
                                 fontFamily: 'Inter-Regular',
-                                color: ipctColors.regentGray,
+                                color: colors.regentGray,
                                 fontWeight: '500',
                                 fontSize: 12,
                                 lineHeight: 14,
@@ -65,7 +65,7 @@ export default class Input extends Component<IInputProps, object> {
                             <Pressable onPress={onPress} hitSlop={20}>
                                 <Text
                                     style={{
-                                        color: ipctColors.blueRibbon,
+                                        color: colors.blueRibbon,
                                         fontSize: 12,
                                         paddingLeft: 3,
                                     }}
@@ -88,7 +88,7 @@ export default class Input extends Component<IInputProps, object> {
                             zIndex: 1,
                             fontSize: 15,
                             fontFamily: 'Inter-Regular',
-                            color: ipctColors.almostBlack,
+                            color: colors.almostBlack,
                             textAlignVertical: this.props.multiline
                                 ? 'top'
                                 : undefined,
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         zIndex: 1,
         fontSize: 15,
         fontFamily: 'Inter-Regular',
-        color: ipctColors.almostBlack,
+        color: colors.almostBlack,
         justifyContent: 'flex-start',
     },
     label: {

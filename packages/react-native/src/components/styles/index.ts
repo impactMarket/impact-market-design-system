@@ -1,7 +1,5 @@
-import { StyleSheet } from 'react-native';
-
 // use https://chir.ag/projects/name-that-color
-export const ipctColors = {
+export const colors = {
     greenishTeal: '#2DCE89',
     softGray: '#E9ECEF',
     regentGray: '#7E8DA6',
@@ -15,5 +13,3 @@ export const ipctColors = {
     darkGray: '#32325D',
     error: '#ff3333',
 };
-
-export default StyleSheet.create({});

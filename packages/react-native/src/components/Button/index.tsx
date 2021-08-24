@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { StyleProp, TextStyle, ViewStyle } from 'react-native';
-import { Button as RNPButton } from 'react-native-paper';
-import { ipctColors } from '../../styles/index';
+import { StyleProp, TextStyle, ViewStyle, Button as RNButton } from 'react-native';
+import { colors } from '../styles/index';
 
 interface IButtonProps {
     modeType: 'green' | 'gray' | 'default';
@@ -43,22 +42,22 @@ export default class Button extends Component<IButtonProps, IButtonState> {
             if (modeType === 'green') {
                 buttonStyle = {
                     ...buttonStyle,
-                    backgroundColor: ipctColors.greenishTeal,
+                    backgroundColor: colors.greenishTeal,
                 };
             } else if (modeType === 'gray') {
                 buttonStyle = {
                     ...buttonStyle,
-                    backgroundColor: ipctColors.softGray,
+                    backgroundColor: colors.softGray,
                 };
             } else if (modeType === 'default') {
                 buttonStyle = {
                     ...buttonStyle,
-                    backgroundColor: ipctColors.blueRibbon,
+                    backgroundColor: colors.blueRibbon,
                 };
             } else {
                 buttonStyle = {
                     ...buttonStyle,
-                    backgroundColor: ipctColors.blueRibbon,
+                    backgroundColor: colors.blueRibbon,
                 };
             }
         }
@@ -66,23 +65,25 @@ export default class Button extends Component<IButtonProps, IButtonState> {
             buttonStyle = { ...buttonStyle, ...(style as any) };
         }
         return (
-            <RNPButton
-                mode="contained"
-                uppercase={false}
-                icon={icon}
-                {...this.props}
-                style={buttonStyle}
-                labelStyle={{
-                    color: modeType === 'gray' ? '#32325D' : 'white',
-                    fontFamily: bold ? 'Inter-Bold' : 'Inter-Regular',
-                    fontSize: 15,
-                    lineHeight: 17.58,
-                    ...(this.props.labelStyle as any),
-                }}
+            <RNButton
+                // mode="contained"
+                // uppercase={false}
+                // icon={icon}
+                // {...this.props}
+                // style={buttonStyle as any}
+                // labelStyle={{
+                //     color: modeType === 'gray' ? '#32325D' : 'white',
+                //     fontFamily: bold ? 'Inter-Bold' : 'Inter-Regular',
+                //     fontSize: 15,
+                //     lineHeight: 17.58,
+                //     ...(this.props.labelStyle as any),
+                // }}
                 accessibilityLabel={accessibilityLabel}
+                title="Example"
+                onPress={() => {}}
             >
                 {children}
-            </RNPButton>
+            </RNButton>
         );
     }
 }
