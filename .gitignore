@@ -1,5 +1,6 @@
 node_modules
 dist
+__generated__
 .expo/*
 npm-debug.*
 *.jks
