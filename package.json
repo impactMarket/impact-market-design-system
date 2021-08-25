@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "impact-market",
+  "workspaces": ["packages/*"]
+}
