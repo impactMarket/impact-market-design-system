@@ -79,7 +79,7 @@ export default class Button extends Component<IButtonProps, IButtonState> {
                 //     ...(this.props.labelStyle as any),
                 // }}
                 accessibilityLabel={accessibilityLabel}
-                title="Example2"
+                title="Example4"
                 onPress={() => {}}
             >
                 {children}
